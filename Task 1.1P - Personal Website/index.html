@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<head>
+    <title>Hayden Duong</title>
+    <style>
+        /* Styles for navigation buttons */
+        .link_button {
+            background-color: white; /* Button background color */
+            color: rgb(6, 248, 200); /* Text color in cyan */
+            font-size: 20px; /* Text size */
+            border: none; /* No borders */
+            height: 35px; /* Button height */
+            width: 100px; /* Button width */
+            cursor: pointer; /* Cursor appears as a pointer on hover */
+            margin-right: 10px; /* Space between buttons */
+        }
+
+        /* Container for header elements */
+        .main_container {
+            position: relative; /* Relative positioning for absolute children */
+            width: 100%; /* Full width of its parent */
+        }
+
+        /* Styles for the header image */
+        .responsive_image {
+            width: 100%; /* Full container width */
+            height: 400px; /* Fixed height */
+        }
+        
+        /* Overlay appearing on hover in the header */
+        .overlay {
+            position: absolute; /* Positioned relative to its nearest positioned ancestor */
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            width: 100%;
+            height: 0; /* Initially hidden */
+            color: white;
+            padding: 10px 0;
+            overflow: hidden;
+            transition: height 0.5s ease; /* Smooth transition for height */
+        }
+
+        /* Reveals the overlay on hover */
+        .main_container:hover .overlay {
+            height: 20%; /* Shows 20% of the bottom part */
+        }
+
+        /* Style for the title inside the overlay */
+        h1 {
+            width: 100%;
+            color: white;
+            position: absolute;
+            text-align: center; /* Center align text */
+        }
+
+        /* Style for circular image */
+        .personal_image {
+            border-radius: 100%; /* Full circle */
+            width: 150px; /* Fixed width */
+            height: 150px; /* Fixed height to maintain aspect ratio */
+            display: block; /* Block display to apply margin auto */
+            margin-left: auto;
+            margin-right: auto; /* Center the image horizontally */
+        }
+
+        /* Flex container for sections */
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Align children centrally */
+            justify-content: center; /* Center children vertically */
+        }
+
+        /* Text styling for section descriptions */
+        .section_text1 {
+            color: rgb(6, 248, 200);
+            text-align: center;
+            font-size: 20px;
+        }
+
+        /* Cyan horizontal line for visual separation */
+        .cyan_line {
+            height: 3px; /* Line thickness */
+            background-color: cyan; /* Cyan color */
+            width: 15%; /* Width relative to its container */
+            margin: 20px auto; /* Center line horizontally and space vertically */
+        }
+
+        /* Larger text for major section titles */
+        .section_text2 {
+            color: rgb(6, 248, 200);
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        /* Flexbox setup for project display */
+        .project {
+            display: flex;
+            align-items: center; /* Center items vertically */
+            margin-bottom: 20px; /* Space between projects */
+            padding: 0 40%; /* Padding on the left and right */
+        }
+
+        /* Styles for images within projects */
+        .project-image {
+            width: 200px; /* Fixed width */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 30px; /* Space between image and description */
+        }
+
+        /* Description style for projects */
+        .project-description {
+            flex: 1; /* Take remaining space */
+            white-space: nowrap; /* Prevent text wrapping */
+            color: rgb(6, 248, 200); /* Text color */
+        }
+
+        /* Grid setup for photo gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid columns */
+            gap: 10px; /* Space between images */
+            padding: 10px; /* Padding around grid */
+        }
+
+        /* Styles for images within the gallery */
+        .gallery-image {
+            width: 100%; /* Full width of column */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 4px; /* Rounded corners */
+        }
+        
+        /* Enlarge images on hover */
+        .gallery-image:hover {
+            transform: scale(1.1); /* Scale up size */
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <button class="link_button">About</button>
+        <button class="link_button">Work</button>
+        <button class="link_button">Contact</button>
+    </nav>
+
+    <header>
+        <div class="main_container">
+            <img src="school.jpeg" alt="Deakin University" class="responsive_image">
+            <div class="overlay">
+                <h1>Hey, I'm Hayden</h1>
+            </div>
+        </div>
+    </header>
+    
+    <section id="about">
+        <img src="personal.jpg" alt="Personal Image" class="personal_image">
+        <p class="section_text1">
+            I am a student of SIT313 in Deakin University, Burwood Campus
+        </p>
+    </section>
+
+    <div class="cyan_line"></div>
+
+    <section id="projects">
+        <p class="section_text2">
+            Here's what I've done so far
+        </p>
+
+        <div class="project">
+            <img src="robot.jpg" alt="Frustrated Robot" class="project-image">
+            <div class="project-description">
+                Coming Soon! (But not sure when)
+            </div>
+        </div>
+        
+    </section>
+    
+    <div class="cyan_line"></div>
+    
+    <section id="photo_gallery">
+        <p class="section_text2">
+            My Photos
+        </p>
+
+        <div class="gallery">
+            <img src="one.jpg" alt="image1" class="gallery-image">
+            <img src="two.jpg" alt="image2" class="gallery-image">
+            <img src="three.jpg" alt="image3" class="gallery-image">
+            <img src="four.jpg" alt="image4" class="gallery-image">
+        </div>
+    </section>
+</body>
+</html>
