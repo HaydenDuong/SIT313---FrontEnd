@@ -1,0 +1,50 @@
+.signup-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Adjust the width as needed */
+    margin: 0 auto;
+}
+  
+form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+  
+label {
+    margin-right: 10px;
+    font-weight: bold;
+    flex: 1; /* Allow label to take up space */
+    text-align: right; /* Align text to the right */
+    font-size: 1.2em;
+}
+  
+input[type="email"] {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+    width: 70%; /* Adjust the width as needed */
+    flex: 3; /* Allow input to take up more space */
+    font-size: 1.2em;
+}
+  
+button {
+    padding: 15px 25px;
+    background-color: #888;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    flex: 1; /* Allow button to take up space */
+    font-size: 1.2em;
+}
+  
+button:hover {
+    background-color: #555;
+}
