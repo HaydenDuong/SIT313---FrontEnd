@@ -1,0 +1,12 @@
+.header {
+    background-color: #e0e0e0; /* Light grey background */
+    padding: 10px;               /* Paddng around the text */
+    border: 1px solid #ccc;    /* Optional: Add a broder for better visiblity */
+    font-weight: bold;           /* Bold text */
+    font-size: 1.2em;            /* Enlarge the font size */
+}
+
+.red-text {
+    color: red;
+    font-weight: bold;
+}
