@@ -1,0 +1,71 @@
+/* Centering the form on the page */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .login-form {
+    background-color: white;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    position: relative; /* Important for positioning the sign-up button */
+  }
+  
+  /* Styling the email and password fields */
+  h2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Styling the login button */
+  .login-button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling the Sign up button */
+  .signup-button-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .signup-button {
+    background-color: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .signup-button:hover {
+    background-color: #007bff;
+    color: white;
+  }

@@ -1,0 +1,21 @@
+/* SignOutButton.css */
+.signout-button {
+    background-color: #ff6347;  /* Tomato color */
+    color: white;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signout-button:hover {
+    background-color: #ff4500; /* Darker tomato color */
+  }
+  
+  .signout-button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
