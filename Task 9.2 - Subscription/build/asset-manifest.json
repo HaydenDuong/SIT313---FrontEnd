@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fa4ca055.css",
+    "main.js": "/static/js/main.2e2ba5c2.js",
+    "static/media/school.jpeg": "/static/media/school.96c9782a25a2fc589119.jpeg",
+    "static/media/instagram.png": "/static/media/instagram.fe5c5dbaf8f6296ec7a7.png",
+    "static/media/facebook.png": "/static/media/facebook.1a3a207e279d7c861ed8.png",
+    "static/media/six.jpg": "/static/media/six.760840470d92d4a1f80b.jpg",
+    "static/media/twitter.png": "/static/media/twitter.55fc066696930c81991c.png",
+    "static/media/five.jpg": "/static/media/five.9b2acf5024b44f96cec9.jpg",
+    "static/media/three.jpg": "/static/media/three.53b16696fd251d98bc21.jpg",
+    "static/media/two.jpg": "/static/media/two.fedbec591afa173dac5c.jpg",
+    "static/media/one.jpg": "/static/media/one.2efb47d84a0a63c02a8e.jpg",
+    "static/media/four.jpg": "/static/media/four.34fbda565ce49694f83b.jpg",
+    "index.html": "/index.html",
+    "main.fa4ca055.css.map": "/static/css/main.fa4ca055.css.map",
+    "main.2e2ba5c2.js.map": "/static/js/main.2e2ba5c2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa4ca055.css",
+    "static/js/main.2e2ba5c2.js"
+  ]
+}

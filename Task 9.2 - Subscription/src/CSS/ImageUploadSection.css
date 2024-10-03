@@ -1,0 +1,43 @@
+.image-upload-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures even spacing between elements */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* Ensures padding and borders are included in width calculation */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.image-upload-container label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.image-upload-container input[type="text"] {
+    padding: 5px;
+    width: 60%; /* Increase width if desired */
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #e0e0e0;
+    flex-grow: 1; /* Allow input to grow and take up remaining space */
+}
+
+.image-upload-container button {
+    padding: 5px 15px;
+    margin-left: 5px;
+    background-color: #888;
+    border: 1px solid #888;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    flex-shrink: 0; /* Prevent button from shrinking */
+}
+
+.image-upload-container button:hover {
+    background-color: #555;
+}
